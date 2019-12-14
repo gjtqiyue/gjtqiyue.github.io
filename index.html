@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lancer's personal webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    </head>
+
+    <script>
+        $(document).ready(function(){    
+            $("#about").show();
+            $("#about").siblings().hide();
+
+            $(".nav-link").click(function(event){
+                event.preventDefault();
+                var content = $(this).attr('href');
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+                $(content).show();
+                $(content).siblings().hide();
+            });
+        });
+    </script>
+
+    <body class="site">
+        <main class="site-content">
+                <div class="fixed">
+                    <nav class="navbar" id="myNavbar"> 
+                        <img id="logo" src="https://cdn.freebiesupply.com/logos/large/2x/mcgill-university-3-logo-png-transparent.png">
+                        <div id="photo">
+                            <img src="Images/profile.png">
+                        </div>
+                        <ul class="text-center">
+                            <li class="nav-item active"><a class="nav-link" href="#about">About me</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#projects">Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container">
+                    <div id="about" class="content">
+                        <h2 class="title, name">Jintao (Lancer) Guo</h2>
+                        <div class="text">
+                            <p class="quote"><i> << A good programmer is someone who always looks both ways before crossing a one-way street. >> - Doug Linder </i></p>
+                            <div class="space"></div>
+                            <p> I am a fourth-year McGill student who is passionate about game development. I am from China, a country where video game industry has not been fully developped. 
+                                Just like many other kids, when I was young all I wanted was to make my own game one day. 
+                            </p>   
+                            <p> After years, I have come to realize that a game is more than just a program that you play to kill your time.
+                                Beyong the fun that game brings, it is a communication of ideas between designers and players. A great game is a masterpiece that perfectly blends interaction, stories, art, music altogether, bringing players an immersive experience that is 
+                                hard to be told by movies and books. In my life, it brings me laughter, it brings me tears, it even brings me anger, sympathy, and friendship with my teammates. Essentially, these thoughts drive me to keep playing games, appreciating games and now, making games. 
+                            </p>
+                            <p> 
+                                Over the last 2 years, besides my school work, I have been learning how to design and make games, working on several projects, and eventually, slowly marching towards my goal.<br>
+                            </p>   
+                            <p> I am most familiar with the development in Unity, from assets management, scene management down to code implementation. I am equipped with knowledge about game objects and components, MVC pattern and generic programming that helps me program simple and usable code. 
+                                Moreover, discovering the power of linear algebra helps me greatly, as well as learning 3D modeling in Autodest Maya. Recently, I step my foot into shader and grpahics fields, and studied
+                                shader programming in both Unity and OpenGL. 
+                            </p>
+
+                            <h3>Education</h3>
+                            <p>
+                                Bachelor of Computer Science, McGill University <br>
+                                Montreal | Canada | 2016 - (2020) <br>
+                            </p>
+                            <p>
+                            Link to <a href="https://drive.google.com/file/d/1Um0ew6kg2esQl8OvewwsbRWNJofumK3S/view?usp=sharing">CV</a><br>
+                            Link to <a href="https://github.com/gjtqiyue/">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="projects" class="content">
+                        <h2 class="title">Projects</h2>
+                        <div class="space"></div>
+                        <div class="text">
+                            <div class="textbox">
+                                <h3>Ubisoft Game Lab Competition 2018</h3>
+                                <p>Held by Ubisoft Montreal, a 10 week long competition between universites in Montreal. Each team is carrying out the task of making a 3D game prototype about a theme.</p>
+                                <p>Theme of 2018: Change the world</p>
+                                <div class="center">
+                                    <iframe id="gamelab_video"  width="560" height="315" src="https://www.youtube.com/embed/Iae_k4NwC6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <p>I was responsible for creating AI for the game. We programed a central system that allows AI agent to communicate with each other to carry out simple strategic task, as well as reporting player's location. For single agent, a behaviour tree with blackboard is used to program the logic behind each decision, and some other techinique to solve visibility and searching area calculation.  </p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">
+                                <h3>Software Engineering project</h3>
+                            
+                                <p>A project that implemented a board game named Flash Point.</p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">
+                                <h3>Pentago Swap (a chess game AI)</h3>
+                                <p>
+                                In this project, the task is to design an AI that can play a chess game called <strong>Pentago Swap</strong>, which is derived from a much more popular game Pentago. 
+                                This was held as a competition in class with total 289 participants, trying to beat each other's AI model and reach the top. 
+                                The final performance for my design helps me land at <strong>10th place</strong> in the whole competition  
+                                </p>
+                                <p>The description of rules is <a href="Files/project_specification.pdf">here</a></p>
+                                <p>The project provides me a great opportunity to expreiment AI algorithms with my own choice. Based on the rules, there are many possible ways to achieve this task, such as Monte Carlo techinique or MiniMax algorithms.
+                                Specifically, I choose the <strong>MiniMax algorithms with Alpha-Beta prunning</strong> to speed up the processing time.
+                                <p>Highlight of points lead to good performance:</p>
+                                <ul>
+                                    <li>
+                                        <p>Board representation</p>
+                                        <p>Design my own representation of board that summarizes only the important information I need to process, such as if there are pieces three in a row, or potential swapping chance for me to win. It is also easier for me to exmaine future board status with less computation.</p>
+                                    </li>
+                                    <li>
+                                        <p>Minimax algorithms at each move with iterative deepening.</p> 
+                                        <p>Iterative deepening will ensure that time is fully used at each move. Moreover, at each layer, all the tree leaves are stored using a min heap so it will be dynamically sorted whenever a new state is added.</p>
+                                    </li>
+                                    <li>
+                                        <p>Evaluation at each single board state captures the information well. </p>
+                                        <p>It fully analyses board from four different orientation, and considering a same board state from both sides' angle to calculate the score that represents our advantages or disadvantages.</p>
+                                    </li>
+                                </ul>
+                                <p>Link to my <a href="https://github.com/gjtqiyue/Comp424-AI-project/blob/master/Comp424_AI_Report.pdf">report</a> and <a href="https://github.com/gjtqiyue/Comp424-AI-project">code</a> on GitHub</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="textbox">
+                            <h3>Graphics - Ray tracing</h3>
+                            <div>
+                                <div class="img-inline">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <img class="col" src="Images/260728557-competition.png">
+                                            <img class="col" src="Images/TwoSpheresPlanePathTracing.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <img class="col" src="Images/cbox_path_mirror_glass.png">
+                                            <img class="col" src="Images/bedroom.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    I coded my ray tracer as the final project in graphics course, and participated a in class rendering competition. My path tracing rendering was mentioned as 2nd place in the whole class.
+                                </p>
+                                <p>
+                                    We were asked to code a basic ray tracer that supports object intersection and direct illumination. Further than that, I coded my own BSDF and integrator that enables Monte Carlo sampling on surface light, and eventually, explicit path tracing wit different importance sampling.
+                                    For BSDF, beyong the basic diffuse and specular material, I implemented mirror bsdf and fresnel bsdf that models the look of mirror and glasses.
+                                </p>
+                                <p>
+                                    (Some rendering images from my ray tracer above)
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">
+                                <h3>Game AI simulation with hierarchical task network</h3>
+                            
+                                <p>The player needs to compete with another agent to retreive more resource, while there are guards patrolling around. Once get spotted then the agent is eliminated. The agent has the ability to teleport the enemy to its spawning point or teleport the other player to a random place. The AI's goal is to retreive the resource while it doesn't know enough information about the world and the player.</p>
+                                <img class="center" style="width:300px;" src="Images/AI_decision_making.png">
+                                <ul>
+                                    <li><p>Full implementation on AI HTN system (hierachical task planning)</p></li>
+                                    <li><p>A* search on low level navigation</p></li>
+                                    <li><p>simple AI visibility implementation</p></li>
+                                </ul>
+                                <p>Want to try the game yourself? Click <a href="https://simmer.io/@gjtqiyue/beatsimpleai">here</a></p>
+                                <p>Link to <a href="https://github.com/gjtqiyue/2DAISimulation">GitHub code</a></p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">
+                                <h3>Database project (Comp 421 project)</h3>
+                                <p>Database simluation for a Online Makeup Retail Store. Final project grade <strong>99.3%</strong> and final course grade A.</p>
+                                <p>
+                                    We design a model and fullfill its requirements in order to construct a database that can store user's information,
+                                    user's cart and shopping history, product categories and their product. The design also models the relation between users and products through their favoriate items and comments to specific products.
+                                </p>
+                                <p>ER Model</p>
+                                <img class="center" id="ermodel" style="width:400px" src="Images/ER_Model.png">
+                                <p>Link to <a href="https://github.com/gjtqiyue/Comp421-Database-Project">full project</a></p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">     
+                                <h3>Web development project: Cafe reservation website</h3>                       
+                                <p>Link to <a href="https://github.com/gjtqiyue/Anti-Cafe">full project</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="research" class="content">
+                        <h2 class="title">Past Research Project</h2>
+                        <div class="space"></div>
+                        <div class="textbox">
+                            <h3>Sound propagation simulation in Video game environment</h3>
+                            <p>Summer 2019</p>
+                            <p>
+                            In some modern stealth video games, sound propagation is neglected or poorly implemented causing unsatisfactory gaming experience. My research aims to develop a model to simulate the physicalpropagation of sound, in the perspective of reflection and diffraction,analysing various factors, and eventually grant game agents theability of sound identification and navigation.
+                            </p>
+                            <div id="poster" class="center">
+                                <img src="./Images/Research_Poster.png" width="600px" height="800px" />
+                            </div>
+                            <p>For more detail, refer to my <a href="https://drive.google.com/file/d/1nW87KeOMJmIPnvuWGhNqqe5mQLeo3mmD/view?usp=sharing">abstract</a> submitted to UCore 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Footer section-->
+        <footer id="footer">
+            <img id="footerImg" src="https://images.wallpaperscraft.com/image/circles_background_surface_91686_1920x1080.jpg" alt="Circle">
+        </footer>    
+    </body>
+</html>

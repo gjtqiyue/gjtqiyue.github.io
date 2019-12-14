@@ -1,0 +1,198 @@
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0%;
+    background-color: #293241;
+}
+
+.site-content {
+    flex: 1;
+}
+
+#title {
+    margin-top: 70px;
+    font-size: large;
+}
+
+.fixed {
+    -ms-flex: 0 0 230px;
+    flex: 0 0 230px;
+}
+
+.navbar {
+    float: left;
+    height: 150%;
+    width: 210px;
+    min-width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: #293241;
+    background-image: url(https://images.wallpaperscraft.com/image/leather_line_seam_stripes_dark_50625_1920x1080.jpg);
+    object-fit: cover;
+}
+
+#myNavbar {
+    display: table;
+    float: left;
+    overflow:hidden;
+}
+
+.navItem {
+    width:70%;
+}
+
+#logo {
+    object-fit: contain;
+    width: 70%;
+    position: relative;
+    left: 30px;
+    margin: -10px 0px;
+}
+
+#photo img {
+    position: relative;
+    height: 133px;
+    width: 100px;
+    left: 57px;
+}
+
+#photo {
+    height: 100px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    padding-left: 63px;
+    padding-top: 20px;
+}
+
+.navbar li {
+    padding: 10px 0px;
+}
+
+.navbar img{
+    width:170px;
+}
+
+.navbar a{
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    margin: 0px, 20px;
+    word-wrap: break-word;
+    font-size: large;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.textbox {
+    box-shadow: 0 0 0 0.7rem #3D5A80;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #3D5A80;
+}
+
+a {
+   color: #98C1D9;
+   text-decoration: none; 
+   background-color: none;
+}
+
+h1,h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #E0FBFC;
+}
+
+p {
+    font-family: Sans-Serif;
+    color: antiquewhite;
+}
+
+h3,h4 {
+    color: #EE6C4D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.container {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 210px;
+    /* width: 80%; */
+    height:fit-content;
+    padding-right: 90px;
+}
+
+.content {
+    margin-left: 100px;
+}
+
+.space {
+    height:30px;
+}
+
+.center{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    /* position: relative;
+    overflow: hidden; */
+}
+
+.col {
+    flex: 50%;
+    padding: 5px;
+    max-width: 100%;
+}
+
+.left-col {
+    padding-right: 50px;
+  }
+
+.img-col {
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.col-item {
+    padding: 15px;
+    max-width: 40%;
+}
+
+.img-inline {
+    width: 50%;
+    float: right;
+}
+
+footer {
+    padding: 0%;
+    height:130px;
+    position:sticky;
+    margin-top: 130px;
+    overflow:hidden;
+}
+
+#footerImg{
+    width:  102%; /*or 70%, or what you want*/
+    height: 100%; /*or 70%, or what you want*/
+    object-fit: cover;
+}
