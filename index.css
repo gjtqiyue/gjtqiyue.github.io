@@ -47,10 +47,10 @@
 
 #logo {
     object-fit: contain;
-    width: 70%;
-    position: relative;
+    width: 40%;
+	margin-bottom: 40px;
+	margin-top: 10px;
     left: 30px;
-    margin: -10px 0px;
 }
 
 #photo img {
