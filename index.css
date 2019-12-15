@@ -1,7 +1,6 @@
 .site {
-    display: flex;
+    display: inline-block;
     min-height: 100vh;
-    flex-direction: column;
     margin: 0%;
     background-color: #293241;
 }
@@ -22,7 +21,7 @@
 
 .navbar {
     float: left;
-    height: 150%;
+    height: 1500%;
     width: 210px;
     min-width: 210px;
     position: fixed;
@@ -194,7 +193,7 @@ footer {
 }
 
 #footerImg{
-    width:  102%; /*or 70%, or what you want*/
+    width:  200%; /*or 70%, or what you want*/
     height: 100%; /*or 70%, or what you want*/
     object-fit: cover;
 }
