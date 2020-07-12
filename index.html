@@ -71,7 +71,11 @@
                             <h3>Education</h3>
                             <p>
                                 Bachelor of Computer Science, McGill University <br>
-                                Montreal | Canada | 2016 - (2020) <br>
+                                Montreal | Canada | 2016 - 2020 <br>
+                            </p>
+                            <p>
+                                Master of Computer Science, McGill University <br>
+                                Montreal | Canada | 2020 - (2022) <br>
                             </p>
                             <p>
                             Link to <a href="https://drive.google.com/file/d/1Um0ew6kg2esQl8OvewwsbRWNJofumK3S/view?usp=sharing">CV</a><br>
@@ -79,8 +83,42 @@
                             </p>
                         </div>
                     </div>
+
+<!-- Project page -->
+
                     <div id="projects" class="content">
                         <h2 class="title">Projects</h2>
+                        <div class="space"></div>
+                        <div class="textbox">
+                            <h3>Graphics - Ray tracing</h3>
+                            <div>
+                                
+                                <p>
+                                    I coded my ray tracer as the final project in graphics course, and participated a in class rendering competition. My path tracing rendering was mentioned as 2nd place in the whole class.
+                                </p>
+                                <p>
+                                    We were asked to code a basic ray tracer that supports object intersection and direct illumination. Further than that, I coded my own BSDF and integrator that enables Monte Carlo sampling on surface light, and eventually, explicit path tracing wit different importance sampling.
+                                    For BSDF, beyong the basic diffuse and specular material, I implemented mirror bsdf and fresnel bsdf that models the look of mirror and glasses.
+                                </p>
+                                <p>
+                                    (Some rendering images from my ray tracer)
+                                </p>
+                                <div class="center">
+                                    <div class="col-item">
+                                        <div class="row center" style="width:40%;">
+                                            <img class="col" src="Images/260728557-competition.png">
+                                            <img class="col" src="Images/TwoSpheresPlanePathTracing.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="row center" style="width:40%;">
+                                            <img class="col" src="Images/cbox_path_mirror_glass.png">
+                                            <img class="col" src="Images/bedroom.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="space"></div>
                         <div class="text">
                             <div class="textbox">
@@ -99,6 +137,22 @@
                                 <h3>Software Engineering project</h3>
                             
                                 <p>A project that implemented a board game named Flash Point.</p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="textbox">
+                                <h3>Game AI simulation with hierarchical task network</h3>
+                            
+                                <p>The player needs to compete with another agent to retreive more resource, while there are guards patrolling around. Once get spotted then the agent is eliminated. The agent has the ability to teleport the enemy to its spawning point or teleport the other player to a random place. The AI's goal is to retreive the resource while it doesn't know enough information about the world and the player.</p>
+                                <img class="center" style="width:300px;" src="Images/AI_decision_making.png">
+                                <ul>
+                                    <li><p>Full implementation on AI HTN system (hierachical task planning)</p></li>
+                                    <li><p>A* search on low level navigation</p></li>
+                                    <li><p>simple AI visibility implementation</p></li>
+                                </ul>
+                                <p>Want to try the game yourself? Click <a href="https://simmer.io/@gjtqiyue/beatsimpleai">here</a></p>
+                                <p>Link to <a href="https://github.com/gjtqiyue/2DAISimulation">GitHub code</a></p>
                             </div>
                         </div>
                         <div class="space"></div>
@@ -133,50 +187,19 @@
                             </div>
                         </div>
                         <div class="space"></div>
-                        <div class="textbox">
-                            <h3>Graphics - Ray tracing</h3>
-                            <div>
-                                
-                                <p>
-                                    I coded my ray tracer as the final project in graphics course, and participated a in class rendering competition. My path tracing rendering was mentioned as 2nd place in the whole class.
-                                </p>
-                                <p>
-                                    We were asked to code a basic ray tracer that supports object intersection and direct illumination. Further than that, I coded my own BSDF and integrator that enables Monte Carlo sampling on surface light, and eventually, explicit path tracing wit different importance sampling.
-                                    For BSDF, beyong the basic diffuse and specular material, I implemented mirror bsdf and fresnel bsdf that models the look of mirror and glasses.
-                                </p>
-                                <p>
-                                    (Some rendering images from my ray tracer)
-                                </p>
-                                <div class="center">
-                                    <div class="col-item">
-                                        <div class="row center" style="width:40%;">
-                                            <img class="col" src="Images/260728557-competition.png">
-                                            <img class="col" src="Images/TwoSpheresPlanePathTracing.png">
-                                        </div>
-                                    </div>
-                                    <div class="col-item">
-                                        <div class="row center" style="width:40%;">
-                                            <img class="col" src="Images/cbox_path_mirror_glass.png">
-                                            <img class="col" src="Images/bedroom.png">
-                                        </div>
-                                    </div>
-                                </div>
+                        <div>
+                            <div class="textbox">
+                                <h3>LeBeagle blog page for Quebec Center of Biodiversity Science</h3>
+                                <p>A blog page done by Wordpress</p>
+                                <img class="center" id="lebeagle" style="width:300px" src="Images/LeBeagle.png">
+                                <p><a href="https://lebeagle.qcbs.ca/">Website link </a></p>
                             </div>
                         </div>
                         <div class="space"></div>
                         <div>
-                            <div class="textbox">
-                                <h3>Game AI simulation with hierarchical task network</h3>
-                            
-                                <p>The player needs to compete with another agent to retreive more resource, while there are guards patrolling around. Once get spotted then the agent is eliminated. The agent has the ability to teleport the enemy to its spawning point or teleport the other player to a random place. The AI's goal is to retreive the resource while it doesn't know enough information about the world and the player.</p>
-                                <img class="center" style="width:300px;" src="Images/AI_decision_making.png">
-                                <ul>
-                                    <li><p>Full implementation on AI HTN system (hierachical task planning)</p></li>
-                                    <li><p>A* search on low level navigation</p></li>
-                                    <li><p>simple AI visibility implementation</p></li>
-                                </ul>
-                                <p>Want to try the game yourself? Click <a href="https://simmer.io/@gjtqiyue/beatsimpleai">here</a></p>
-                                <p>Link to <a href="https://github.com/gjtqiyue/2DAISimulation">GitHub code</a></p>
+                            <div class="textbox">     
+                                <h3>Web development project: Cafe reservation website</h3>                       
+                                <p>Link to <a href="https://github.com/gjtqiyue/Anti-Cafe">full project</a></p>
                             </div>
                         </div>
                         <div class="space"></div>
@@ -193,14 +216,11 @@
                                 <p>Link to <a href="https://github.com/gjtqiyue/Comp421-Database-Project">full project</a></p>
                             </div>
                         </div>
-                        <div class="space"></div>
-                        <div>
-                            <div class="textbox">     
-                                <h3>Web development project: Cafe reservation website</h3>                       
-                                <p>Link to <a href="https://github.com/gjtqiyue/Anti-Cafe">full project</a></p>
-                            </div>
-                        </div>
+                        
                     </div>
+
+<!-- Research page -->
+
                     <div id="research" class="content">
                         <h2 class="title">Past Research Project</h2>
                         <div class="space"></div>
