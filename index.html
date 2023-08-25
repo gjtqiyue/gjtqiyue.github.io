@@ -53,16 +53,16 @@
                         <div class="text">
                             <p class="quote"><i> << A good programmer is someone who always looks both ways before crossing a one-way street. >> - Doug Linder </i></p>
                             <div class="space"></div>
-                            <p> I am a McGill graduate student who is passionate about software and game development. I am from China, and I have studied in Canada for the past 6 years. I speak Mandarin and English, a little bit of French and I'm also interested in Japanese.
+                            <p> I am a McGill graduate student who is passionate about software and game development. I am from China, and I have studied in Canada for the past 8 years. I speak Mandarin and English, a little bit of French and I'm also interested in Japanese.
                             </p> 
                             <p> 
-                                I'm interested in physics based rendering, familiar with general software development and skills. In the undergrad years, besides my school work, I have been learning how to design and make games, worked on several projects, and eventually, slowly marching towards my goal.<br>
+                                I'm interested in physics based rendering and computer graphics, familiar with general game and software development skills. My projects involve making video games, doing interesting research and practicing coding skills.<br>
                             </p> 
 
                             <h3>Education</h3>
                             <p>
                                 Master of Computer Science, McGill University <br>
-                                Montreal | Canada | 2020 - (2022) <br>
+                                Montreal | Canada | 2020 - 2023 <br>
                             </p>
                             <p>
                                 Bachelor of Computer Science, McGill University <br>
@@ -82,15 +82,26 @@
                         <h2 class="title">Projects</h2>
                         <div class="space"></div>
                         <div class="textbox">
+                            <h3>Tencent game project</h3>
+                            <p>This game is called Yingzao, created by a team of four people. It draws inspiration from the beauty of ancient Chinese architecture and addresses the limited awareness of its intricate details in contemporary times. Our aim is to develop a game that familiarizes players with each construction step, including woodwork, painting, and the final assembly that amalgamates all elements. Our goal is to transport players back thousands of years, allowing them to experience the wisdom of our ancestors.</p>
+                            <p>As the sole programmer, my role involved programming various aspects of the game, including creating the game loop, designing gameplay mechanics, developing the user interface, and handling graphics. I was responsible for overseeing the entire programming process from start to finish. Additionally, I had the responsibility of coordinating with both 2D and 3D artists to procure the necessary assets and seamlessly integrate them into the game.</p>
+                            <p>Link to <a href="https://github.com/gjtqiyue/Tencent_Game_Competition_2021_YingZao">GitHub code</a></p>
+                            <div class="center">
+                                <div class="col-item">
+                                    <div class="row center" style="width:40%;">
+                                        <img class="col" src="Images/yingzao_2.png">
+                                        <img class="col" src="Images/yingzao_1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="textbox">
                             <h3>Graphics - Ray tracing</h3>
                             <div>
                                 
                                 <p>
-                                    I coded my ray tracer as the final project in graphics course, and participated a in class rendering competition. My path tracing rendering was mentioned as 2nd place in the whole class.
-                                </p>
-                                <p>
-                                    We were asked to code a basic ray tracer that supports object intersection and direct illumination. Further than that, I coded my own BSDF and integrator that enables Monte Carlo sampling on surface light, and eventually, explicit path tracing wit different importance sampling.
-                                    For BSDF, beyong the basic diffuse and specular material, I implemented mirror bsdf and fresnel bsdf that models the look of mirror and glasses.
+                                    I coded my ray tracer and participated a in class rendering competition. Later on expanded to help with my research experiments.
                                 </p>
                                 <p>
                                     (Some rendering images from my ray tracer)
@@ -215,6 +226,22 @@
 
                     <div id="research" class="content">
                         <h2 class="title">Past Research Project</h2>
+                        <div class="space"></div>
+                        <div class="textbox">
+                            <h3>Appearance Filtering for High-frequency Normal Mapped Layered Materials</h3>
+                            <p>Master thesis</p>
+                            <p>
+                            Rendering multilayer material with high-frequency normal maps is a challenging problem in computer graphics due to its complexity and high-cost demand with traditional Monte Carlo techniques. This research thesis proposes an approximate approach to efficiently render this type of complex surface with a single sample. Our method integrates two methods from appearance filtering and layered material rendering fields respectively, and focuses on processing the complex normal information on a framework of layered material approximation model. For each normal map, we explicitly model the normal distribution under the pixel footprint in the form of histograms. The representations of normals as well as the layered material are then combined and projected into spherical harmonics to enable efficient integration of extended light sources. We use an interpolation method that allows us to quickly perform this spherical harmonics transformation. Our results show a significant improvement in rendering time while maintaining the complex appearance of the layered material.
+                            </p>
+                            <div class="center">
+                                <div class="col-item">
+                                    <div class="row center" style="width:40%;">
+                                        <img class="col" src="Images/layeredMat.png">
+                                        <img class="col" src="Images/glints_layered_ours.png">
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
                         <div class="space"></div>
                         <div class="textbox">
                             <h3>Sound propagation simulation in Video game environment</h3>
